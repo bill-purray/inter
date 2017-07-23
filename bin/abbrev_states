@@ -1,0 +1,13 @@
+#!/opt/ruby/2.2.0/bin/ruby
+
+$:<< File.join(File.dirname(__FILE__), '..', 'lib')
+
+require 'options'
+require 'data_manager'
+
+options = get_options
+verify_options(options)
+options.merge!(get_config(options))
+
+dm = Data_Manager.new(options, options[:project])
+dm.abbrev_states
