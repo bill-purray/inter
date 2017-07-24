@@ -1,0 +1,10 @@
+:rolodex:
+  :tabular_data: 'rolodex.csv'
+  :required_headers:
+    - 'state'
+
+:animal_shelter:
+  :tabular_data: 'floor_plan.csv'
+  :required_headers:
+    - 'cat'
+    - 'dog'
